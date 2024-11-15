@@ -95,24 +95,34 @@ const MortageCalculator = () => {
 					/>
 				</div>
 				<button type='submit'>Calculate</button>
-				{error && <div style={{ color: "red" }}>{error}</div>}
-				<div>
-					{monthlyPayment !== null && (
-						<span>
-							Monthly Payment: ₹{monthlyPayment.toFixed(2)}
-						</span>
-					)}
-				</div>
-				<div>
-					{totalPayment !== null && (
-						<span>Total Payment: ₹{totalPayment.toFixed(2)}</span>
-					)}
-				</div>
-				<div>
-					{totalInterest !== null && (
-						<span>Total Interest: ₹{totalInterest.toFixed(2)}</span>
-					)}
-				</div>
+				{error ? (
+					<div style={{ color: "red" }}>{error}</div>
+				) : (
+					<>
+						<div>
+							{monthlyPayment !== null && (
+								<span>
+									Monthly Payment: ₹
+									{monthlyPayment.toFixed(2)}
+								</span>
+							)}
+						</div>
+						<div>
+							{totalPayment !== null && (
+								<span>
+									Total Payment: ₹{totalPayment.toFixed(2)}
+								</span>
+							)}
+						</div>
+						<div>
+							{totalInterest !== null && (
+								<span>
+									Total Interest: ₹{totalInterest.toFixed(2)}
+								</span>
+							)}
+						</div>
+					</>
+				)}
 			</form>
 		</div>
 	);
