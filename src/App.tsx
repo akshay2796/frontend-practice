@@ -43,7 +43,7 @@ function App() {
 				</a>
 			</div>
 
-			<Link to={"/mortage-calculator"}>Mortage Calculator</Link>
+			<Link to={"/practice-questions"}>Practice Questions</Link>
 		</>
 	);
 }
