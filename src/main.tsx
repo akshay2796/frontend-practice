@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.tsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { MortageCalculator, PracticeQuestions } from "./pages";
+import { MakeCounter, MortageCalculator, PracticeQuestions } from "./pages";
 
 const router = createBrowserRouter([
 	{
@@ -19,6 +19,10 @@ const router = createBrowserRouter([
 	{
 		path: "/practice-questions/mortage-calculator",
 		element: <MortageCalculator />,
+	},
+	{
+		path: "/practice-questions/make-counter",
+		element: <MakeCounter />,
 	},
 	{
 		path: "/practice-questions",

@@ -11,6 +11,11 @@ const PracticeQuestions = () => {
 						Mortage Calculator
 					</Link>
 				</li>
+				<li>
+					<Link to='/practice-questions/make-counter'>
+						Make Counter
+					</Link>
+				</li>
 			</ol>
 		</div>
 	);
