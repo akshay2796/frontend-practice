@@ -16,6 +16,9 @@ const PracticeQuestions = () => {
 						Make Counter
 					</Link>
 				</li>
+				<li>
+					<Link to='/practice-questions/mean'>Mean</Link>
+				</li>
 			</ol>
 		</div>
 	);
