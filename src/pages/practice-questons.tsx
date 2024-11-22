@@ -19,6 +19,9 @@ const PracticeQuestions = () => {
 				<li>
 					<Link to='/practice-questions/mean'>Mean</Link>
 				</li>
+				<li>
+					<Link to='/practice-questions/min-by'>Min By</Link>
+				</li>
 			</ol>
 		</div>
 	);

@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import {
 	MakeCounter,
 	Mean,
+	MinBy,
 	MortageCalculator,
 	PracticeQuestions,
 } from "./pages";
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
 	{
 		path: "/practice-questions/mean",
 		element: <Mean />,
+	},
+	{
+		path: "/practice-questions/min-by",
+		element: <MinBy />,
 	},
 	{
 		path: "/practice-questions",
